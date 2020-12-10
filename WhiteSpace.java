@@ -1,10 +1,10 @@
 import java.util.Scanner;
 
 class WhiteSpace{
-    static String WhiteSpace(){
+    static int WhiteSpace(){
         Scanner sc = new Scanner(System.in);
-        String s = sc.nextLine();
-        String[] r = s.split(" ");
+        int s = sc.nextLine();
+        int[] r = s.split(" ");
         return r[];
     }    
 }
