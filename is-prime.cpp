@@ -5,13 +5,13 @@ using namespace std;
 //false:not prime
 bool isPrime(int N){
 
+    //自明な数字はあらかじめ除外
     if (N < 2) return false;
     else if (N == 2) return true;
-    
-    //偶数は自明
     else if (N % 2 == 0) return false; 
 
-    for (int i=3; i<=sqrt(N); i+=2){
+    int sqrtN = sqrt(N);
+    for (int i=3; i<=sqrtN; i+=2){
         if (N % i == 0){
             return false;
         }
