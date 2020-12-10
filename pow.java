@@ -7,7 +7,7 @@ class pow {
         if (i == 0)
             return 1;
         if (i == 1)
-            return 1;
+            return n;
         for (int j = 0; j < i - 1; j++) {
             n = n * k;
         }
