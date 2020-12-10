@@ -2,23 +2,23 @@ import java.util.*;
 
 class pow {
 
-    static long _pow(int k, int i) {
-        long n = k;
-        if (i == 0)
+    static long _pow(int p, int k) {
+        long n = p;
+        if (k == 0)
             return 1;
-        if (i == 1)
+        if (k == 1)
             return n;
-        for (int j = 0; j < i - 1; j++) {
-            n = n * k;
+        for (int j = 0; j < k - 1; j++) {
+            n = n * p;
         }
         return n;
     }
 
     public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
-        int i = sc.nextInt();
-        int j = sc.nextInt();
-        long k = _pow(i, j);
-        System.out.println(k);
+        int p = sc.nextInt();
+        int k = sc.nextInt();
+        long pow = _pow(p, k);
+        System.out.println(pow);
     }
 }
