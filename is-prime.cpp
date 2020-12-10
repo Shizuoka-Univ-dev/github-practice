@@ -1,21 +1,23 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-//1:prime
-//0:not prime
+//true:prime
+//false:not prime
 bool isPrime(int N){
 
-    if( N == 1 || N == 0){
-        return 0;
-    }
+    if (N < 2) return false;
+    else if (N == 2) return true;
+    
+    //偶数は自明
+    else if (N % 2 == 0) return false; 
 
-    for(int i=2; i<N; i++){
-        if( N%i == 0){
-            return 0;
+    for (int i=3; i<=sqrt(N); i+=2){
+        if (N % i == 0){
+            return false;
         }
     }
 
-    return 1;
+    return true;
 }
 
 int main(){
