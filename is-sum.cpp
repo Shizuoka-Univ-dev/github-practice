@@ -2,15 +2,15 @@
 using namespace std;
 
 long sigma(long n){
-    int r;
+    long long r;
     r=n*(n+1)/2;
     return r;
 }
 
 int main(){
-    int n;
+    long long n;
     cin>>n;
-    int ans;
+    long long ans;
     ans=sigma(n);
     cout<<ans<<endl;
 }
